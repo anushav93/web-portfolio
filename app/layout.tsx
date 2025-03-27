@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Cormorant_Garamond } from 'next/font/google'
+import { Cormorant_Garamond } from 'next/font/google';
+import { Analytics } from "@vercel/analytics/react"
  
 const bungee = Cormorant_Garamond({
   weight: ['300','400','500','600','700'],
@@ -61,6 +62,7 @@ export default function RootLayout({
           </div>
           {children}
         </div>
+        <Analytics />
       </body>
     </html>
   );
