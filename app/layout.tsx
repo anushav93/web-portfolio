@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Cormorant_Garamond } from 'next/font/google';
+import { IBM_Plex_Sans } from 'next/font/google';
 import { Analytics } from "@vercel/analytics/react"
  
-const bungee = Cormorant_Garamond({
+const ibmPlexSans = IBM_Plex_Sans({
   weight: ['300','400','500','600','700'],
   subsets: ['latin'],
   display: 'swap',
@@ -45,23 +45,36 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${bungee.className} min-h-screen antialiased relative`}
+        className={`${ibmPlexSans.className} min-h-screen antialiased relative overflow-x-hidden`}
       >
-        <div className="fixed inset-0 bg-grid-lines opacity-[0.15] "></div>
-        <div className=" mx-auto px-6 relative z-10 flex flex-col items-center justify-center min-h-screen  ">
-          <div className="bg-white/50 backdrop-blur-sm fixed top-0 w-full  ">
-          <nav className="max-w-4xl py-4 flex justify-between items-center mx-auto z-50 px-4 lg:!px-0">
-            <div className="text-2xl"> 
-              <a href="/">AV</a>
-            </div>
-            <div className="flex gap-6">
-              <a href="/about" className="hover:opacity-70 px-3 py-1">About</a>
-              <a href="https://www.linkedin.com/in/anusha-v/" target="_blank" className="transition-all duration-300 ease-in-out border border-neutral-800 text-neutral-800 hover:bg-neutral-800 hover:text-neutral-50 px-3 py-1">Get in touch</a>
-            </div>
-          </nav>
+        {/* Clean background */}
+        <div className="fixed inset-0 bg-gray-50"></div>
+        
+        {/* Modern Minimal Navigation */}
+        <nav className="fixed top-0 w-full bg-white/30 backdrop-blur-xl border-b border-gray-100/50 z-50">
+          <div className="max-w-6xl mx-auto px-6 py-5 flex justify-between items-center">
+            {/* Name Logo */}
+            <a href="/" className="group transition-all duration-300">
+              <span className="text-xl md:text-2xl font-bold text-gray-900 tracking-tight group-hover:text-gray-700 transition-colors duration-300">
+                Anusha Ventrapragada
+              </span>
+            </a>
+            
+            {/* Get in Touch Button */}
+            <a 
+              href="mailto:anushaventrapragada93@gmail.com"
+              className="relative text-sm md:text-base md:px-8 px-4 py-3 bg-gray-900 text-white rounded-2xl font-medium overflow-hidden group transition-all duration-300 hover:shadow-lg hover:shadow-gray-900/25 hover:-translate-y-0.5"
+            >
+              <span className="relative z-10">Get in touch</span>
+              <div className="absolute inset-0 bg-gradient-to-r from-gray-800 to-gray-900 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            </a>
           </div>
+        </nav>
+
+        {/* Main content */}
+        <main className="pt-20">
           {children}
-        </div>
+        </main>
         <Analytics />
       </body>
     </html>
