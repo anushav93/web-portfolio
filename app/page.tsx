@@ -196,7 +196,7 @@ export default function Home() {
             {/* <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 text-gray-900 leading-tight">
               Web Developer 
             </h1> */}
-            <h1 className="text-xl md:text-3xl text-gray-600 font-light max-w-5xl mx-auto leading-relaxed">
+            <h1 className="text-xl md:text-3xl text-gray-600 font-light max-w-4xl mx-auto leading-relaxed">
               Hi, I'm <span className="font-semibold text-gray-900">{name}</span>. I build exceptional web experiences with 6+ years of expertise in React, Next.js, and modern frontend technologies.
             </h1>
           </motion.div>
