@@ -5,8 +5,8 @@ export const heroCards: HeroCardData[] = [
   {
     id: 'experience',
     title: 'Professional Experience',
-    subtitle: 'Software Engineer',
-    description: 'Currently at HGS Digital, building scalable React applications with 6+ years of frontend development experience.',
+    subtitle: 'Sr. Software Engineer',
+    description: 'Currently at HGS Digital, building scalable React applications with 7+ years of frontend development experience.',
     backgroundColor: 'bg-yellow-300',
     hoverColor: 'hover:bg-yellow-400',
     icon: HiOutlineBriefcase,
@@ -16,23 +16,22 @@ export const heroCards: HeroCardData[] = [
       content: `
         <div class="space-y-6">
           <div>
-            <h3 class="text-xl font-bold text-gray-900 mb-2">HGS Digital – Software Engineer</h3>
+            <h3 class="text-xl font-bold text-gray-900 mb-2">HGS Digital – Sr. Software Engineer</h3>
             <p class="text-neutral-600 font-medium mb-3">Chicago, IL | Dec 2018 – Present</p>
             <ul class="space-y-2 text-gray-700">
-              <li>• Constructed and maintained React and Next.js web applications, delivering expeditious, responsive, and SEO-optimized customer-facing features</li>
-              <li>• Designed and implemented reusable UI components utilizing Tailwind CSS and SASS</li>
-              <li>• Developed bespoke React plugins employing Twilio UI to satisfy diverse client requirements</li>
-              <li>• Created and optimized serverless Node.js functions (AWS Lambda) for scalable backend logic</li>
-              <li>• Enhanced performance and Core Web Vitals scores through lazy loading and code splitting</li>
+              <li>• Built and maintained scalable React & Next.js applications for B2B and customer-facing platforms</li>
+              <li>• Owned reusable UI components with performance, accessibility, and consistency in mind</li>
+              <li>• Delivered high-performance, SEO-optimized features, improving Core Web Vitals</li>
+              <li>• Developed custom React integrations with Twilio UI for real-time communication workflows</li>
+              <li>• Collaborated cross-functionally to own features end-to-end</li>
             </ul>
           </div>
           <div>
             <h3 class="text-xl font-bold text-gray-900 mb-2">Audentio, LLC – Web Developer</h3>
             <p class="text-neutral-600 font-medium mb-3">Remote | Jan 2018 – Sep 2018</p>
             <ul class="space-y-2 text-gray-700">
-              <li>• Developed custom web applications in React and SASS</li>
-              <li>• Produced responsive front-end components for client projects</li>
-              <li>• Delivered interactive UI solutions improving usability and visual consistency</li>
+              <li>• Built responsive, component-based UIs using React and SASS</li>
+              <li>• Delivered polished, interactive interfaces aligned with design requirements</li>
             </ul>
           </div>
         </div>
@@ -42,7 +41,7 @@ export const heroCards: HeroCardData[] = [
   {
     id: 'skills',
     title: 'Technical Expertise',
-    subtitle: 'Full-Stack Capabilities',
+    subtitle: 'Building Scalable, Performant Frontend Systems',
     description: 'Expert in React, Next.js, TypeScript, Node.js, and AWS. Specialized in building scalable, high-performance web applications.',
     backgroundColor: 'bg-fuchsia-300',
     hoverColor: 'hover:bg-fuchsia-400',
@@ -53,21 +52,28 @@ export const heroCards: HeroCardData[] = [
       content: `
         <div class="space-y-6">
           <div>
-            <h3 class="text-xl font-bold text-gray-900 mb-3">Languages & Frameworks</h3>
-            <p class="text-gray-700">JavaScript (ES6+), React, Next.js, Node.js, Redux, HTML5, CSS3, SASS, Tailwind CSS</p>
+            <h3 class="text-xl font-bold text-gray-900 mb-3">Frontend Engineering</h3>
+            <p class="text-gray-700">React, Next.js, JavaScript (ES6+), HTML5, CSS3, SASS, Tailwind CSS</p>
+            <p class="text-gray-700 italic">Component-driven development, performance optimization, accessibility-first UI</p>
+          </div>
+            <div>
+            <h3 class="text-xl font-bold text-gray-900 mb-3">State & Data Management</h3>
+            <p class="text-gray-700">React State, Context, Redux (working knowledge)</p>
+            <p class="text-gray-700 italic">Predictable data flow for data-heavy UIs</p>
           </div>
           <div>
-            <h3 class="text-xl font-bold text-gray-900 mb-3">Tools & Platforms</h3>
-            <p class="text-gray-700">AWS Lambda, Twilio UI, npm, Webpack, Vite, JIRA, Git</p>
+            <h3 class="text-xl font-bold text-gray-900 mb-3">Backend & Integrations</h3>
+            <p class="text-gray-700">Node.js, AWS Lambda, RESTful APIs, Serverless Architecture</p>
+            <p class="text-gray-700 italic">Secure API integration and scalable backend workflows</p>
           </div>
           <div>
-            <h3 class="text-xl font-bold text-gray-900 mb-3">Practices</h3>
-            <p class="text-gray-700">Responsive Design, Accessibility (WCAG), SEO Optimization, Agile (Scrum), CI/CD, Unit Testing</p>
+            <h3 class="text-xl font-bold text-gray-900 mb-3">Tooling & Build Systems</h3>
+            <p class="text-gray-700">Vite, Webpack, npm, Git, Chrome DevTools, JIRA</p>
           </div>
           <div>
-            <h3 class="text-xl font-bold text-gray-900 mb-3">Additional</h3>
-            <p class="text-gray-700">RESTful APIs, Cross-browser Testing, Chrome DevTools, Serverless Architecture</p>
-          </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-3">Engineering Practices</h3>
+            <p class="text-gray-700">Accessibility (WCAG), Responsive Design, SEO Optimization, CI/CD, Unit Testing, Agile (Scrum)</p>
+          </div>       
         </div>
       `
     }
@@ -87,19 +93,19 @@ export const heroCards: HeroCardData[] = [
         <div class="space-y-4">
           <div class=" p-4 rounded-lg">
             <h3 class="font-bold text-gray-900 mb-2">Modern React Applications</h3>
-            <p class="text-gray-700">Delivered customer-facing applications using React and Next.js, improving site responsiveness and SEO across eCommerce projects.</p>
+            <p class="text-gray-700">Built and shipped scalable React & Next.js applications for customer-facing and B2B platforms, with a strong focus on performance and SEO.</p>
           </div>
           <div class=" p-4 rounded-lg">
-            <h3 class="font-bold text-gray-900 mb-2">Component Library</h3>
-            <p class="text-gray-700">Built 20+ reusable UI components with Tailwind CSS and SASS, standardizing design systems and accelerating development cycles.</p>
+            <h3 class="font-bold text-gray-900 mb-2">Reusable Component Systems</h3>
+            <p class="text-gray-700">Designed and maintained a reusable UI component library (20+ components) using Tailwind CSS and SASS, improving consistency and development velocity.</p>
           </div>
           <div class=" p-4 rounded-lg">
             <h3 class="font-bold text-gray-900 mb-2">Custom Integrations</h3>
-            <p class="text-gray-700">Created custom React plugins integrated with Twilio UI to address diverse client requirements, enhancing digital engagement.</p>
+            <p class="text-gray-700">Developed custom React plugins and integrations using Twilio UI to support real-time communication workflows and client-specific requirements.</p>
           </div>
           <div class=" p-4 rounded-lg">
             <h3 class="font-bold text-gray-900 mb-2">Performance Optimization</h3>
-            <p class="text-gray-700">Boosted site performance and accessibility by implementing lazy loading, code splitting, and WCAG compliance.</p>
+            <p class="text-gray-700">Improved Core Web Vitals and accessibility through lazy loading, code splitting, and WCAG-compliant UI patterns.</p>
           </div>
         </div>
       `

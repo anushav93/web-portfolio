@@ -11,7 +11,7 @@ export default function About() {
 
       <div className="relative max-w-6xl mx-auto px-6 py-32 z-10">
         {/* Header */}
-        <motion.div 
+        <motion.div
           className="text-center mb-20"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -29,7 +29,7 @@ export default function About() {
             About Me
           </h1>
           <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed font-light">
-            Frontend Developer with 6+ years of experience building scalable, accessible web applications using React, Next.js, and modern technologies.
+            Frontend Developer with 7+ years of experience building scalable, accessible web applications using React, Next.js, and modern technologies.
           </p>
         </motion.div>
 
